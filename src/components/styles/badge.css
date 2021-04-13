@@ -1,0 +1,20 @@
+.imagen{
+    text-align: center;
+    font-size: 62px;
+    color: blue;
+    background-color: green;
+}
+.Nombre{
+    text-align: center;
+    font-size: 50px;
+    color: red;
+    border-color: blue;
+    background-color:greenyellow;
+}
+.Red{
+    text-align: center;
+    font-size: 20px;
+    color:royalblue;
+    font-style: italic;
+    background-color: gray;
+}
