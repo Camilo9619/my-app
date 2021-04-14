@@ -6,6 +6,21 @@ import '../styles/NavBar.css';
 import Badge from '../Badge';
 import '../styles/badge.css'
 class BadgeNew extends React.Component{
+    state={ form:{
+        firstname:'',
+        lastname:'',
+        email:'',
+        jobtitle:'',
+        twitter:'',
+    }};
+    handleChange= e=>{
+        this.setState({
+            form:{
+                ...this.state.form,
+                [e.target.name]:e.target.value
+            },
+        });
+    };
     render(){
         return(
             <div>
@@ -16,15 +31,16 @@ class BadgeNew extends React.Component{
                     <div className="row">
                         <div className="col-6">
                             <Badge
-                                    firstname="Camilo"
-                                    lastname="Piñuela"
-                                    twitter="camilo9619"
-                                    jobtitle="Auxiliar Desarrollo"
+                                    firstname={this.state.form.firstname}
+                                    lastname={this.state.form.lastname}
+                                    twitter={this.state.form.twitter}
+                                    jobtitle={this.state.form.jobtitle}
+                                    email={this.state.form.email}
                                     avatarUrl="https://www.gravatar.com/avatar?d=identicon"
-                                />
+                            />
                         </div>
                         <div className="col-6">
-                            <BadgeForm/>
+                            <BadgeForm onChange={this.handleChange} formValues={this.state.form}/>
                         </div>
                     </div>
                 </div>
