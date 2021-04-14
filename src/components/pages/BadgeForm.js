@@ -15,7 +15,6 @@ class BadgeForm extends React.Component{
         e.preventDefault();
         console.log('Form was submitted');
         console.log(this.state);
-
     };
     render(){
         return(
