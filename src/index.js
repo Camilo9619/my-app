@@ -6,6 +6,7 @@ import './global.css';
 import reportWebVitals from './reportWebVitals';
 
 import BadgeNew from './components/pages/BadgeNew';
+import Badges from './components/pages/Badges';
 
 
 
@@ -15,7 +16,7 @@ import BadgeNew from './components/pages/BadgeNew';
 
 const container= document.getElementById('app');
 
-ReactDOM.render(<BadgeNew firstname="Camilo" lastname="Piñuela" avatar="https://www.gravatar.com/avatar?d=identicon"jobtitle="Auxiliar Desarrollo" twitter="camilo9619"/>,container);
+ReactDOM.render(<Badges/>,container);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
