@@ -19,8 +19,7 @@ class BadgeForm extends React.Component{
     render(){
         return(
             <div className="Formulario container">
-                <h1>BIENVENIDOS</h1>
-                <h2>FORMULARIO</h2>
+                <h1>New Attendant</h1>
                 <form onSubmit={this.handleSubmit}>
                     <div classname="form-group">
                         <label>First Name</label>

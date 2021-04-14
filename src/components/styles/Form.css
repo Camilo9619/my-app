@@ -13,12 +13,11 @@
 .BotonForm:hover{
     background-color: blue;
 }
-Formulario {
-    /* text-align: center; */
-    background-color: rgb(249 249 249);
+.Formulario {
+    margin-top: 50px;
 }
 .Formulario h1{
-    color:#41515c;
+    color:#000000;
 }
 .Formulario h2{
     color:#804400;
