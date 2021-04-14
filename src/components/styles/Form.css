@@ -1,0 +1,32 @@
+.BotonForm{
+    color: #ffffff;
+    font-size: 32px;
+    background-color: green;
+    border-color: white;
+    -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-align: center;
+  margin-top: 10px;
+  padding:10px
+}
+.BotonForm:hover{
+    background-color: blue;
+}
+Formulario {
+    /* text-align: center; */
+    background-color: rgb(249 249 249);
+}
+.Formulario h1{
+    color:#41515c;
+}
+.Formulario h2{
+    color:#804400;
+    margin-top: 55px;
+}
+.Formulario input{
+    margin-top: 30px;;
+}
+.Formulario span{
+    margin-right: 10px;;
+}

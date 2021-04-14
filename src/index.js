@@ -1,29 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import 'bootstrap/dist/css/bootstrap.css';
+import './global.css';
 import reportWebVitals from './reportWebVitals';
-import Badge from './components/Badge'
-
-//ReactDOM.render(
- // <React.StrictMode>
-    //<App />
-  //</React.StrictMode>,
-  //document.getElementById('app')
-//);
+import Badge from './components/Badge';
 
 
 
-const element=(
-    <div>
-        <h1>Hola Soy Camilo</h1>
-        <p>Soy estudiante</p>
-    </div>
-);
+
+
+
 
 const container= document.getElementById('app');
 
-ReactDOM.render(<Badge firstname="Camilo" lastname="piñuela" jobtitle="auxiliar"/>,container);
+ReactDOM.render(<Badge firstName="Camilo" lastName="Piñuela" avatar="https://www.gravatar.com/avatar?d=identicon"jobTitle="Auxiliar Desarrollo" Twitter="camilo9619"/>,container);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
