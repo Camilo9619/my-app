@@ -7,6 +7,7 @@ import BadgeForm from '../components/BadgeForm';
 import PageLoading from '../components/PageLoading';
 import api from '../api';
 
+
 class BadgeNew extends React.Component {
   state = {
     loading: false,
@@ -58,7 +59,6 @@ class BadgeNew extends React.Component {
             alt="Logo"
           />
         </div>
-
         <div className="container">
           <div className="row">
             <div className="col-6">
@@ -87,6 +87,7 @@ class BadgeNew extends React.Component {
       </React.Fragment>
     );
   }
+
 }
 
 export default BadgeNew;

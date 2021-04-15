@@ -1,10 +1,6 @@
 import React from 'react';
-
 import Navbar from './Navbar';
-
 function Layout(props) {
-  // const children = props.children;
-
   return (
     <React.Fragment>
       <Navbar />
@@ -12,5 +8,4 @@ function Layout(props) {
     </React.Fragment>
   );
 }
-
 export default Layout;

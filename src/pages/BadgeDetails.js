@@ -1,14 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import './styles/BadgeDetails.css';
 import confLogo from '../images/platziconf-logo.svg';
 import Badge from '../components/Badge';
 import DeleteBadgeModal from '../components/DeleteBadgeModal';
-
 function BadgeDetails(props) {
   const badge = props.badge;
-
   return (
     <div>
       <div className="BadgeDetails__hero">
@@ -25,7 +22,6 @@ function BadgeDetails(props) {
           </div>
         </div>
       </div>
-
       <div className="container">
         <div className="row">
           <div className="col">
@@ -67,5 +63,4 @@ function BadgeDetails(props) {
     </div>
   );
 }
-
 export default BadgeDetails;

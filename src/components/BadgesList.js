@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import './styles/BadgesList.css';
 import Gravatar from './Gravatar';
-
 class BadgesListItem extends React.Component {
   render() {
     return (
@@ -25,29 +23,22 @@ class BadgesListItem extends React.Component {
     );
   }
 }
-
 function useSearchBadges(badges) {
   const [query, setQuery] = React.useState('');
   const [filteredBadges, setFilteredBadges] = React.useState(badges);
-
   React.useMemo(() => {
     const result = badges.filter(badge => {
       return `${badge.firstName} ${badge.lastName}`
         .toLowerCase()
         .includes(query.toLowerCase());
     });
-
     setFilteredBadges(result);
   }, [badges, query]);
-
   return { query, setQuery, filteredBadges };
 }
-
 function BadgesList(props) {
   const badges = props.badges;
-
   const { query, setQuery, filteredBadges } = useSearchBadges(badges);
-
   if (filteredBadges.length === 0) {
     return (
       <div>
@@ -62,7 +53,6 @@ function BadgesList(props) {
             }}
           />
         </div>
-
         <h3>No badges were found</h3>
         <Link className="btn btn-primary" to="/badges/new">
           Create new badge
@@ -70,7 +60,6 @@ function BadgesList(props) {
       </div>
     );
   }
-
   return (
     <div className="BadgesList">
       <div className="form-group">
@@ -84,7 +73,6 @@ function BadgesList(props) {
           }}
         />
       </div>
-
       <ul className="list-unstyled">
         {filteredBadges.map(badge => {
           return (
@@ -102,5 +90,4 @@ function BadgesList(props) {
     </div>
   );
 }
-
 export default BadgesList;

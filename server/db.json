@@ -1,27 +1,11 @@
 {
   "badges": [
     {
-      "firstName": "Manuel",
-      "lastName": "Quiñonez",
-      "email": "manny2007q@example.com",
-      "jobTitle": "Productor de Cine",
-      "twitter": "mannyfilms1",
-      "id": "n8SkH8I"
-    },
-    {
-      "firstName": "María José",
-      "lastName": "Sánchez",
-      "email": "majosanchez@example.com",
-      "jobTitle": "Historiadora del Arte",
-      "twitter": "majosanchez",
-      "id": "QfvvQpO"
-    },
-    {
       "firstName": "Camilo ",
       "lastName": "Piñuela",
       "email": "camilo9619@gmail.com",
       "jobTitle": "Auxiliar Desarrollo",
-      "twitter": "camilo4512",
+      "twitter": "camilo9619",
       "celphonenumber": "3209141828",
       "id": "JIOmcU9"
     }
