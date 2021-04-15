@@ -10,7 +10,6 @@ class BadgesListItem extends React.Component {
           className="BadgesListItem__avatar"
           email={this.props.badge.email}
         />
-
         <div>
           <strong>
             {this.props.badge.firstName} {this.props.badge.lastName}
@@ -18,6 +17,11 @@ class BadgesListItem extends React.Component {
           <br />@{this.props.badge.twitter}
           <br />
           {this.props.badge.jobTitle}
+          <br/>
+          {this.props.badge.celphonenumber}
+          <br/>
+          {this.props.badge.email}
+          <br/>
         </div>
       </div>
     );
