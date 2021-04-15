@@ -54,7 +54,7 @@ class BadgeForm extends React.Component {
           </div>
 
           <div className="form-group">
-            <label>Redes Sociales(TWITTER)</label>
+            <label>TWITTER</label>
             <input
               onChange={this.props.onChange}
               className="form-control"
@@ -64,7 +64,7 @@ class BadgeForm extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label>Numero de Telefono</label>
+            <label>NUMERO DE TELEFONO</label>
             <input
               onChange={this.props.onChange}
               className="form-control"
