@@ -35,6 +35,7 @@ function BadgeDetails(props) {
               email={badge.email}
               twitter={badge.twitter}
               jobTitle={badge.jobTitle}
+              celphonenumber={badge.celphonenumber}
             />
           </div>
           <div className="col">

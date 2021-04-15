@@ -64,6 +64,17 @@ class BadgeForm extends React.Component {
             />
           </div>
 
+          <div className="form-group">
+            <label>CelPhone Number</label>
+            <input
+              onChange={this.props.onChange}
+              className="form-control"
+              type="text"
+              name="celphonenumber"
+              value={this.props.formValues.celphonenumber}
+            />
+          </div>
+
           <button onClick={this.handleClick} className="btn btn-primary">
             Save
           </button>

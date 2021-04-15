@@ -17,6 +17,7 @@ class BadgeEdit extends React.Component {
       email: '',
       jobTitle: '',
       twitter: '',
+      celphonenumber:'',
     },
   };
 
@@ -82,6 +83,7 @@ class BadgeEdit extends React.Component {
                 lastName={this.state.form.lastName || 'LAST_NAME'}
                 twitter={this.state.form.twitter || 'twitter'}
                 jobTitle={this.state.form.jobTitle || 'JOB_TITLE'}
+                celphonenumber={this.state.form.celphonenumber||'celphonenumber'}
                 email={this.state.form.email || 'EMAIL'}
                 avatarUrl="https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon"
               />
