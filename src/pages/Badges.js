@@ -15,10 +15,9 @@ class Badges extends React.Component {
     error: null,
     data: undefined,
   };
-
+//Comienza a dar peticion
   componentDidMount() {
     this.fetchData();
-
     this.intervalId = setInterval(this.fetchData, 5000);
   }
 
@@ -29,7 +28,7 @@ class Badges extends React.Component {
   fetchData = async () => {
     this.setState({ loading: true, error: null });
 
-    try {
+    try {//Si hay error se captura
       const data = await api.badges.list();
       this.setState({ loading: false, data: data });
     } catch (error) {
@@ -39,7 +38,7 @@ class Badges extends React.Component {
 
   render() {
     if (this.state.loading === true && !this.state.data) {
-      return <PageLoading />;
+      return <PageLoading/>;
     }
 
     if (this.state.error) {

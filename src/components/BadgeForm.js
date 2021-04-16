@@ -1,10 +1,8 @@
-import React from 'react';
-
+import React from 'react'
 class BadgeForm extends React.Component {
   handleClick = e => {
     console.log('Button was clicked');
   };
-
   render() {
     return (
       <div>
@@ -30,7 +28,6 @@ class BadgeForm extends React.Component {
               value={this.props.formValues.lastName}
             />
           </div>
-
           <div className="form-group">
             <label>CORREO ELECTRONICO</label>
             <input
@@ -41,7 +38,6 @@ class BadgeForm extends React.Component {
               value={this.props.formValues.email}
             />
           </div>
-
           <div className="form-group">
             <label>CARGO</label>
             <input
@@ -73,11 +69,9 @@ class BadgeForm extends React.Component {
               value={this.props.formValues.celphonenumber}
             />
           </div>
-
           <button onClick={this.handleClick} className="btn btn-primary">
             GUARDAR
           </button>
-
           {this.props.error && (
             <p className="text-danger">{this.props.error.message}</p>
           )}
